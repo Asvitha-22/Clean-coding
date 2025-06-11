@@ -1,3 +1,8 @@
+/*  Generalization:
+The Animal class is a generalized abstraction of animals. It provides common behavior (eat(), sleep()).
+
+Specialization:
+Dog and Cat inherit from Animal and override makeSound() to provide specialized behavior. They may also introduce new behavior (fetch(), climb()).  */
 #include <iostream>
 using namespace std;
 
