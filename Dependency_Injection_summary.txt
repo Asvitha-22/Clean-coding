@@ -1,0 +1,20 @@
+Dependency Injection	Provide dependencies from outside the class	Decoupling and easier testing
+
+| Component                     | Role                                    |
+| ----------------------------- | --------------------------------------- |
+| `INotificationService`        | Interface (abstract dependency)         |
+| `EmailService` / `SMSService` | Concrete implementations                |
+| `NotificationManager`         | Class that **depends on** the interface |
+| `make_unique(...)`            | **Injects** the desired dependency      |
+
+
+Benefits of DI in This Example
+
+    Loosely Coupled: NotificationManager doesn't care how the notification is sent.
+
+    Easily Swappable: Change behavior at runtime.
+
+    Testable: You can inject a mock service during unit testing.
+
+    Flexible: You can extend by adding new services (e.g., WhatsAppService) without touching NotificationManager.
+
