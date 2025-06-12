@@ -1,0 +1,6 @@
+| Concept     | Relationship   | Lifetime Dependency | Ownership | Example Phrase               |
+| ----------- | -------------- | ------------------- | --------- | ---------------------------- |
+| Association | Uses/related   | No                  | No        | "A teacher uses a projector" |
+| Aggregation | Has-a (weak)   | No                  | No        | "A team has players"         |
+| Composition | Has-a (strong) | Yes                 | Yes       | "A house has rooms"          |
+| Inheritance | Is-a           | N/A                 | N/A       | "A dog is an animal"         |
